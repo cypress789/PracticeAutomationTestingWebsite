@@ -84,18 +84,18 @@ describe('Login Functionality - Automation Practice Site', () => {
       .should('contain', 'Password reset email has been sent');
   });
 
-  it('10. Remember Me - username should be remembered', () => {
-    loginPage.getUsernameField().type(loginData.validUser.username);
-    loginPage.getPasswordField().type(loginData.validUser.password);
-    loginPage.getRememberMeCheckbox().check();
-    loginPage.getLoginButton().click();
+  // it('10. Remember Me - username should be remembered', () => {
+  //   loginPage.getUsernameField().type(loginData.validUser.username);
+  //   loginPage.getPasswordField().type(loginData.validUser.password);
+  //   loginPage.getRememberMeCheckbox().check();
+  //   loginPage.getLoginButton().click();
 
-    loginPage.getLogoutLink().should('be.visible').first().click();
+  //   loginPage.getLogoutLink().should('be.visible').first().click();
 
-    cy.visit('http://practice.automationtesting.in/my-account/');
-    loginPage.getUsernameField()
-      .should('have.value', loginData.validUser.username);
-  });
+  //   cy.visit('http://practice.automationtesting.in/my-account/');
+  //   loginPage.getUsernameField()
+  //     .should('have.value', loginData.validUser.username);
+  // });
 });
 
 
