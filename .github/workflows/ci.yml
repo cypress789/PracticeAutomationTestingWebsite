@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -20,7 +20,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
+      # ✅ Official Cypress Action (auto installs and runs Cypress)
       - name: Run Cypress tests
-        run: npx cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
