@@ -81,7 +81,8 @@ describe('Login Functionality - Automation Practice Site', () => {
     loginPage.clickResetPassword();
 
     loginPage.getResetConfirmationMessage()
-      .should('contain', 'Password reset email has been sent');
+
+      .should('contain', 'Password reset email has been Sent');
   });
 
   // it('10. Remember Me - username should be remembered', () => {
