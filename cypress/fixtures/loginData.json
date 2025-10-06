@@ -1,0 +1,17 @@
+{
+  "validUser": {
+    "username": "ali@system.com",
+    "password": "ali@system.com"
+  },
+  "invalidUser": {
+    "username": "wronguser@example.com",
+    "password": "wrongpass"
+  },
+  "emptyUsername": "  ",
+  "emptyPassword": "  ",
+  "caseUser": {
+    "username": "Ali@System.com",
+    "password": "ali@system.com"
+  },
+  "resetEmail": "ali@system.com"
+}
