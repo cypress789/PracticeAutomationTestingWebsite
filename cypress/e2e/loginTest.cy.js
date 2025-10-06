@@ -27,7 +27,7 @@ describe('Login Functionality - Automation Practice Site', () => {
       .should('contain', 'A user could not be found with this email address');
   });
 
-  it.only('3. Valid username and empty password', () => {
+  it('3. Valid username and empty password', () => {
     loginPage.getUsernameField().type(loginData.validUser.username);
     loginPage.getLoginButton().click();
 

@@ -1,6 +1,6 @@
 /// <reference-types='cypress'/> 
 describe('File Upload Tests', () => {
-it.only('hover and click revealed option', () => {
+it('hover and click revealed option', () => {
   cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
 
   // Hover on the element
