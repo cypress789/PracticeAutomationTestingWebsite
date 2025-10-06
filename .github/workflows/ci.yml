@@ -22,7 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ✅ Official Cypress Action (auto installs and runs Cypress)
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
